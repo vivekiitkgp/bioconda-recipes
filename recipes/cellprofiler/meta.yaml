@@ -15,6 +15,7 @@ build:
   entry_points:
     - cellprofiler=cellprofiler.__main__:main
   script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [osx]
 
 requirements:
   host:
